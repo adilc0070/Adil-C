@@ -1331,6 +1331,17 @@ textarea.form-input::-webkit-resizer {
   border-color: var(--bittersweet-shimmer);
 }
 
+.file-upload {
+  margin-bottom: 25px;
+}
+
+.file-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+}
+
 .form-btn {
   position: relative;
   width: 100%;
@@ -1384,6 +1395,58 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-jet);
 }
 
+/* custom alert*/
+/* Custom Alert Modal */
+.custom-alert {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Make sure it's on top */
+}
+
+.custom-alert-content {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.custom-alert-message {
+  display: block;
+  font-size: var(--fs-6);
+  margin-bottom: 20px;
+}
+
+.custom-alert-btn {
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-alert-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.custom-alert-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
 
 
 

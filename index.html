@@ -8,31 +8,22 @@
     content="width=device-width, initial-scale=1.0">
   <title>Adil c - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon"
-    href="./assets/images/1st-LOGO-WITH-NAME_WHITE-IN-BLACK-STROCK_.ico"
-    type="image/x-icon">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/1st-LOGO-WITH-NAME_WHITE-IN-BLACK-STROCK_.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!-- custom css link -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
-  <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="preconnect"
-    href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com"
-    crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <!-- Noty CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+
+  <!-- google font link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
 
@@ -386,23 +377,72 @@
               </div>
             </li>
 
-            <!-- <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="testimonials-item">
+              <div class="content-card"
+                data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-2.png"
+                    alt="Henry william" width="60"
+                    data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                <h4 class="h4 testimonials-item-title"
+                  data-testimonials-title>Henry william</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text"
+                  data-testimonials-text>
                   <p>
                     Adil c was on second week reviewer
                   </p>
                 </div>
 
               </div>
-            </li> -->
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card"
+                data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png"
+                    alt="Henry william" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title"
+                  data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text"
+                  data-testimonials-text>
+                  <p>
+                    Adil c was on second week reviewer
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card"
+                data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png"
+                    alt="Henry william" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title"
+                  data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text"
+                  data-testimonials-text>
+                  <p>
+                    Adil c was on second week reviewer
+                  </p>
+                </div>
+
+              </div>
+            </li>
 
           </ul>
 
@@ -880,18 +920,17 @@
       -->
 
       <article class="contact" data-page="contact">
-
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
 
           <form id="gfirst"
             action="https://script.google.com/macros/s/AKfycbwreSeOA98wqOXBmvjZajWYIteKtEN5wBD8-qbfj0dVzGY5Ha5HJqBejYaI4HjRufP9/exec"
-            class="form" method="post" data-form>
+            class="form" method="post" data-form
+            enctype="multipart/form-data">
 
             <div class="input-wrapper">
               <input onkeyup="validateName()" id="c_name"
@@ -905,11 +944,29 @@
                 placeholder="Email address" required
                 data-form-input>
               <span class="valid" id="mail_error"></span>
+
+              <input onkeyup="validatePhone()" id="c_phone"
+                type="tel" name="phone" class="form-input"
+                placeholder="Phone number" data-form-input>
+              <span class="valid" id="phone_error"></span>
+
+              <input id="c_subject" type="text"
+                name="subject" class="form-input"
+                placeholder="Subject" required
+                data-form-input>
+              <span class="valid" id="subject_error"></span>
             </div>
 
             <textarea name="message" class="form-input"
               placeholder="Your Message" required
               data-form-input></textarea>
+
+            <div class="file-upload">
+              <label for="c_file" class="file-label">Attach
+                File (optional):</label>
+              <input id="c_file" type="file" name="file"
+                class="form-input" data-form-input>
+            </div>
 
             <button onclick="return validateForm()"
               id="c_click" class="form-btn" type="submit"
@@ -920,10 +977,11 @@
             </button>
 
           </form>
-
         </section>
 
       </article>
+
+
 
     </div>
 
@@ -937,36 +995,45 @@
   <!--
     - custom js link
   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
   <script>
-    $("#gfirst").submit((e) => {
-      e.preventDefault()
-      $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbwreSeOA98wqOXBmvjZajWYIteKtEN5wBD8-qbfj0dVzGY5Ha5HJqBejYaI4HjRufP9/exec",
-        data: $("#gfirst").serialize(),
-        method: "post",
-        success: function (response) {
-          alert("successfully message sented")
-          window.location.reload()
-          //window.location.href="https://google.com"
-        },
-        error: function (err) {
-          alert("Something Error")
-
-        }
-      })
-    })
+    document.addEventListener('DOMContentLoaded', function() {
+      $("#gfirst").submit((e) => {
+        e.preventDefault();
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycbwreSeOA98wqOXBmvjZajWYIteKtEN5wBD8-qbfj0dVzGY5Ha5HJqBejYaI4HjRufP9/exec",
+          data: $("#gfirst").serialize(),
+          method: "post",
+          success: function (response) {
+            // Display success message using Noty
+            new Noty({
+              text: 'Successfully message sent!',
+              type: 'success',
+              timeout: 3000
+            }).show();
+            setTimeout(() => {
+              window.location.reload();
+            }, 3000);
+          },
+          error: function (err) {
+            // Display error message using Noty
+            new Noty({
+              text: 'Something went wrong.',
+              type: 'error',
+              timeout: 3000
+            }).show();
+          }
+        });
+      });
+    });
   </script>
+  
+  <!-- Other scripts -->
   <script src="./assets/js/script.js"></script>
-  <script src="assets/js/scriptemail.js"></script>
-  <!--
-    - ionicon link
-  -->
+  <!-- <script src="assets/js/validationScript.js"></script> -->
 
-  <script type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>

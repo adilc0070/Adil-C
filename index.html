@@ -30,6 +30,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet">
+  
+
 </head>
 
 
@@ -1260,7 +1262,6 @@
           <h3 class="h3 form-title">Contact Form</h3>
 
           <form id="gfirst"
-            action="https://script.google.com/macros/s/AKfycbwreSeOA98wqOXBmvjZajWYIteKtEN5wBD8-qbfj0dVzGY5Ha5HJqBejYaI4HjRufP9/exec"
             class="form" method="post" data-form
             enctype="multipart/form-data">
 
@@ -1334,7 +1335,7 @@
       $("#gfirst").submit((e) => {
         e.preventDefault();
         $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbwreSeOA98wqOXBmvjZajWYIteKtEN5wBD8-qbfj0dVzGY5Ha5HJqBejYaI4HjRufP9/exec",
+          url: CONFIG.API_URL,
           data: $("#gfirst").serialize(),
           method: "post",
           success: function (response) {
@@ -1363,6 +1364,7 @@
 
   <!-- Other scripts -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/config.js"></script>
   <!-- <script src="assets/js/validationScript.js"></script> -->
 
   <!-- ionicon link -->

@@ -819,536 +819,1290 @@
 
           </div>
 
-          <ul class="project-list">
+          <ul class="project-list-grid">
             
 
             <li class="project-item  active"
               data-filter-item
-              data-category="web development">
-              <a href="https://fluxcurrency.vercel.app/">
+              data-category="web development"
+              data-project-item
+              data-github-repo="adilc0070/Flux-Currency">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+              <!-- Skeleton Loader -->
+              <div class="skeleton-loader" data-skeleton>
+                <div class="skeleton-img"></div>
+                <div class="skeleton-content">
+                  <div class="skeleton-category"></div>
+                  <div class="skeleton-title"></div>
+                  <div class="skeleton-stats"></div>
+                  <div class="skeleton-tags"></div>
+                  <div class="skeleton-actions"></div>
+                </div>
+              </div>
+
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  data-src="./assets/images/compressed/project-21.webp"
+                  alt="Flux Currency"
+                  class="lazy-load"
+                  loading="lazy">
+              </figure>
+
+              <div class="project-content">
+                <p class="project-category">Web Development</p>
+                <h3 class="project-title">Flux Currency</h3>
+                
+                <!-- Project Statistics -->
+                <div class="project-stats">
+                  <div class="stat-item" data-github-stars>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span class="stat-value">--</span>
                   </div>
-
-                  <img
-                    src="./assets/images/compressed/project-21.webp"
-                    alt="Flux Currency" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Flux Currency
-                  </h3>
-                  <a class="project-code-link"
-                    target="_blank"
-                    href="https://github.com/adilc0070/Flux-Currency">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
-                  </a>
+                  <div class="stat-item" data-github-forks>
+                    <ion-icon name="git-network-outline"></ion-icon>
+                    <span class="stat-value">--</span>
+                  </div>
+                  <div class="stat-item">
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <span class="stat-value" data-view-count>1.2k</span>
+                  </div>
+                  <div class="stat-item">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span class="stat-value">2024</span>
+                  </div>
                 </div>
 
-                <p class="project-category">Web Development
-                </p>
+                <!-- Tech Stack Tags -->
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">REST API</span>
+                  <span class="tech-tag">CSS3</span>
+                </div>
 
-              </a>
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://fluxcurrency.vercel.app/"
+                    rel="noopener noreferrer">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
+                    target="_blank"
+                    href="https://github.com/adilc0070/Flux-Currency"
+                    rel="noopener noreferrer">
+                    <ion-icon name="logo-github"></ion-icon>
+                    
+                  </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Flux Currency"
+                    data-share-url="https://fluxcurrency.vercel.app/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Hidden case study data -->
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Flux Currency</h3>
+                <p data-case-tech>React, JavaScript, REST API, CSS3</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>Flux Currency is a modern currency conversion application that provides real-time exchange rates for multiple currencies worldwide. Built with React and integrated with a reliable currency API for accurate conversions.</p>
+                  
+                  <!-- Media Gallery -->
+                  <div class="case-study-media">
+                    <h4>Project Media</h4>
+                    <div class="media-grid">
+                      <!-- Image Example -->
+                      <div class="media-item" data-media-type="image">
+                        <img src="./assets/images/compressed/project-21.webp" alt="Flux Currency Dashboard" loading="lazy">
+                        <p class="media-caption">Main Dashboard - Currency Converter Interface</p>
+                      </div>
+                      
+                      <!-- Video Example -->
+                      <div class="media-item" data-media-type="video">
+                        <video controls poster="./assets/images/compressed/project-21.webp">
+                          <source src="./assets/videos/flux-demo.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                        <p class="media-caption">Demo: Real-time Currency Conversion</p>
+                      </div>
+                      
+                      <!-- Additional Image Example -->
+                      <div class="media-item" data-media-type="image">
+                        <img src="./assets/images/compressed/project-21.webp" alt="Mobile View" loading="lazy">
+                        <p class="media-caption">Responsive Mobile Design</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Real-time currency conversion with live exchange rates</li>
+                    <li>Support for 150+ currencies worldwide</li>
+                    <li>Clean and intuitive user interface</li>
+                    <li>Responsive design for mobile and desktop</li>
+                    <li>Fast performance and instant calculations</li>
+                  </ul>
+
+                  <h4>Technical Implementation</h4>
+                  <p>The application uses React hooks for state management and integrates with a RESTful API to fetch real-time exchange rates. The UI is designed with a focus on simplicity and user experience.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Managing API rate limits and ensuring smooth user experience even with frequent conversions. Implemented efficient caching strategies to reduce API calls while maintaining data accuracy.</p>
+
+                  <h4>Client Testimonial</h4>
+                  <div class="case-study-testimonial">
+                    <p class="testimonial-text">"The currency converter is incredibly fast and accurate. The UI is clean and intuitive, making it easy for our users to convert currencies on the go."</p>
+                    <p class="testimonial-author">- Project Stakeholder</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Structured Data -->
+              <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Flux Currency",
+                "description": "A real-time currency conversion application built with modern web technologies.",
+                "applicationCategory": "FinanceApplication",
+                "operatingSystem": "Web",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Adil C"
+                },
+                "datePublished": "2024",
+                "url": "https://fluxcurrency.vercel.app/",
+                "screenshot": "./assets/images/compressed/project-21.webp",
+                "softwareVersion": "1.0",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.8",
+                  "ratingCount": "45"
+                }
+              }
+              </script>
             </li>
             <li class="project-item  active"
               data-filter-item
-              data-category="web applications">
-              <a href="https://ageara.vercel.app/">
+              data-category="web applications"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-20.webp"
+                  alt="AgeAra" loading="lazy">
+              </figure>
+
+              <div class="project-content">
+                <p class="project-category">Web Application</p>
+                <h3 class="project-title">AgeAra</h3>
+                
+                <!-- Project Statistics -->
+                <div class="project-stats">
+                  <div class="stat-item" data-github-stars>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span class="stat-value">--</span>
                   </div>
+                  <div class="stat-item" data-github-forks>
+                    <ion-icon name="git-network-outline"></ion-icon>
+                    <span class="stat-value">--</span>
+                  </div>
+                  <div class="stat-item">
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <span class="stat-value" data-view-count>--</span>
+                  </div>
+                  <div class="stat-item">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span class="stat-value">2024</span>
+                  </div>
+                </div>
 
-                  <img
-                    src="./assets/images/compressed/project-20.webp"
-                    alt="ageara" loading="lazy">
-                </figure>
+                <!-- Tech Stack Tags -->
+                <div class="tech-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                </div>
 
-                <div class="project-content">
-                  <h3 class="project-title">AgeAra
-                  </h3>
-                  <a class="project-code-link"
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://ageara.vercel.app/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/ageara">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="AgeAra"
+                    data-share-url="https://ageara.vercel.app/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Application
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>AgeAra</h3>
+                <p data-case-tech>JavaScript, HTML5, CSS3, Date API</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>AgeAra is a comprehensive age calculator that provides detailed information about age in various formats, lifetime statistics, and interesting facts based on birthdate calculations.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Precise age calculation in years, months, days, hours, and minutes</li>
+                    <li>Lifetime statistics including heartbeats and breaths taken</li>
+                    <li>Zodiac sign and birthstone information</li>
+                    <li>Upcoming birthday countdown</li>
+                    <li>Beautiful, responsive UI design</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with vanilla JavaScript utilizing the Date API for accurate calculations. Implemented complex algorithms to handle different time zones and leap years.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Handling edge cases like leap years, different calendar formats, and time zone conversions. Implemented robust validation and calculation algorithms to ensure accuracy.</p>
+                </div>
+              </div>
             </li>
             <li class="project-item  active"
               data-filter-item
-              data-category="web applications">
-              <a href="https://palette-spark.vercel.app/">
+              data-category="web applications"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-18.webp"
+                  alt="Palette Spark" loading="lazy">
+              </figure>
+
+              <div class="project-content">
+                <p class="project-category">Web Application</p>
+                <h3 class="project-title">Palette Spark</h3>
+                
+                <!-- Project Statistics -->
+                <div class="project-stats">
+                  <div class="stat-item" data-github-stars>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span class="stat-value">--</span>
                   </div>
+                  <div class="stat-item" data-github-forks>
+                    <ion-icon name="git-network-outline"></ion-icon>
+                    <span class="stat-value">--</span>
+                  </div>
+                  <div class="stat-item">
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <span class="stat-value" data-view-count>--</span>
+                  </div>
+                  <div class="stat-item">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <span class="stat-value">2024</span>
+                  </div>
+                </div>
 
-                  <img
-                    src="./assets/images/compressed/project-18.webp"
-                    alt="Palette-spark" loading="lazy">
-                </figure>
+                <!-- Tech Stack Tags -->
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Color Theory</span>
+                </div>
 
-                <div class="project-content">
-                  <h3 class="project-title">Palette Spark
-                  </h3>
-                  <a class="project-code-link"
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://palette-spark.vercel.app/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/paletteSpark">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Palette Spark"
+                    data-share-url="https://palette-spark.vercel.app/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Application
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Palette Spark</h3>
+                <p data-case-tech>React, JavaScript, Color Theory, CSS3</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>Palette Spark is a powerful color palette generator designed for designers and developers to create harmonious color schemes with ease. Features multiple color harmony algorithms and export capabilities.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Generate color palettes using various harmony rules</li>
+                    <li>Copy color codes in HEX, RGB, and HSL formats</li>
+                    <li>Save and manage favorite palettes</li>
+                    <li>Export palettes for design tools</li>
+                    <li>Accessibility checker for color combinations</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Implements advanced color theory algorithms using JavaScript. Built with React for a smooth, interactive user experience with real-time color preview and manipulation.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Creating accurate color harmony algorithms and ensuring accessibility compliance. Developed custom algorithms based on color theory principles and WCAG guidelines.</p>
+                </div>
+              </div>
             </li>
             <li class="project-item  active"
               data-filter-item
-              data-category="web applications">
-              <a href="https://secret-speak-v1.vercel.app/">
+              data-category="web applications"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-17.webp"
+                  alt="Secret Speak" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-17.webp"
-                    alt="URLSnip" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Secret Speak
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Application</p>
+                <h3 class="project-title">Secret Speak</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://secret-speak-v1.vercel.app/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/secretSpeak">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Secret Speak"
+                    data-share-url="https://secret-speak-v1.vercel.app/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Application
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Secret Speak</h3>
+                <p data-case-tech>MERN Stack, MongoDB, Express.js, React, Node.js</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>Secret Speak is an anonymous messaging platform that enables users to share feedback and communicate without revealing their identity, perfect for honest feedback and anonymous communication.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Anonymous messaging system with complete privacy</li>
+                    <li>User authentication and profile management</li>
+                    <li>Real-time message notifications</li>
+                    <li>Secure data encryption</li>
+                    <li>Message filtering and moderation</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with MERN stack featuring MongoDB for data storage, Express.js for API endpoints, React for frontend, and Node.js for backend services. Implements JWT authentication and encryption.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Ensuring complete anonymity while preventing abuse. Implemented rate limiting, content moderation, and spam detection algorithms to maintain platform integrity.</p>
+                </div>
+              </div>
             </li>
             <li class="project-item  active"
               data-filter-item
-              data-category="web applications">
-              <a href="https://urlsnip-v1.vercel.app/">
+              data-category="web applications"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-15.webp"
+                  alt="URLSnip" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-15.webp"
-                    alt="URLSnip" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">URLSnip
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Application</p>
+                <h3 class="project-title">URLSnip</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://urlsnip-v1.vercel.app/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/url-shortener">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="URLSnip"
+                    data-share-url="https://urlsnip-v1.vercel.app/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Application
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>URLSnip</h3>
+                <p data-case-tech>MERN Stack, MongoDB, React, Node.js, Express.js</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>URLSnip is a feature-rich URL shortening service with analytics tracking. Create short, memorable links with custom aliases and track detailed statistics about link performance.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Create short URLs with custom aliases</li>
+                    <li>Comprehensive analytics dashboard</li>
+                    <li>Click tracking and geographic data</li>
+                    <li>QR code generation for links</li>
+                    <li>Link expiration and password protection</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with MERN stack utilizing MongoDB for URL storage and analytics, Express.js for RESTful API, React for responsive frontend, and Node.js for server-side logic.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Generating unique short codes efficiently and handling high traffic loads. Implemented hash-based algorithms and caching strategies for optimal performance.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
               data-filter-item
-              data-category="upcoming">
-              <a href="#">
+              data-category="upcoming"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon
-                      name="time-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="time-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-19.webp"
+                  alt="Mind Vibes" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-19.webp"
-                    alt="Mind-Vibes" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Mind Vibes
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Upcoming Project</p>
+                <h3 class="project-title">Mind Vibes</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn disabled"
+                    style="opacity: 0.5; cursor: not-allowed;">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <span>Coming Soon</span>
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/Mind-Vibes">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Mind Vibes"
+                    data-share-url="https://github.com/adilc0070/Mind-Vibes">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Freelance Work
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Mind Vibes</h3>
+                <p data-case-tech>MERN Stack, React, Node.js, Express.js, MongoDB, AI Integration</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>Mind Vibes is an upcoming mental health platform designed to provide users with mindfulness exercises, mood tracking, and AI-powered mental health support. Currently under development for a freelance client.</p>
+                  
+                  <h4>Planned Features</h4>
+                  <ul>
+                    <li>Daily mood tracking and analytics</li>
+                    <li>Guided meditation and mindfulness exercises</li>
+                    <li>AI-powered mental health chatbot</li>
+                    <li>Personalized wellness recommendations</li>
+                    <li>Progress tracking and goal setting</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Being built with MERN stack and integrating AI services for intelligent mental health support. Features secure user authentication and encrypted data storage for privacy.</p>
+
+                  <h4>Development Status</h4>
+                  <p>Currently in active development phase. Expected launch in the coming months with comprehensive features for mental wellness support.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
               data-filter-item
-              data-category="freelance work">
-              <a href="https://awafimill.com">
+              data-category="freelance work"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="https://awafimill.com/wp-content/uploads/2023/11/cropped-resin-incense-2048x1024.png"
+                  alt="Awafi Mill" loading="lazy">
+              </figure>
 
-                  <img
-                    src="https://awafimill.com/wp-content/uploads/2023/11/cropped-resin-incense-2048x1024.png"
-                    alt="Awafi Mill" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Awafi Mill
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Freelance Work</p>
+                <h3 class="project-title">Awafi Mill</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://awafimill.com">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Awafi Mill"
+                    data-share-url="https://awafimill.com">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Freelance Work
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Awafi Mill</h3>
+                <p data-case-tech>WordPress, WooCommerce, PHP, MySQL, JavaScript</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>Awafi Mill is a comprehensive e-commerce website developed for a client specializing in traditional Arabian incense and perfume products. Features full e-commerce functionality with payment integration.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Product catalog with categories and filters</li>
+                    <li>Shopping cart and wishlist functionality</li>
+                    <li>Secure payment gateway integration</li>
+                    <li>Order tracking and management system</li>
+                    <li>Multi-language support (Arabic/English)</li>
+                    <li>Responsive design for all devices</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built on WordPress with WooCommerce for e-commerce functionality. Customized theme development and plugin integration for enhanced features and performance optimization.</p>
+
+                  <h4>Client Satisfaction</h4>
+                  <p>Successfully delivered a full-featured e-commerce platform that significantly improved the client's online presence and sales capabilities in the UAE market.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
               data-filter-item
-              data-category="web applications">
-              <a
-                href="https://academicases.adilc0070.site/">
+              data-category="web applications"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-10.webp"
+                  alt="Academicases" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-10.webp"
-                    alt="Academicases" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Academicases
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Application</p>
+                <h3 class="project-title">Academicases</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://academicases.adilc0070.site/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/Academicaces">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Academicases"
+                    data-share-url="https://academicases.adilc0070.site/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Application
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Academicases</h3>
+                <p data-case-tech>MERN Stack, MongoDB, Express.js, React, Node.js, AWS S3</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>Academicases is a full-featured Learning Management System (LMS) designed for educational institutions and online course providers. Features comprehensive course management and student tracking.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Course creation and management system</li>
+                    <li>Video lecture streaming with AWS S3</li>
+                    <li>Assignment submission and grading</li>
+                    <li>Student progress tracking and analytics</li>
+                    <li>Discussion forums and Q&A sections</li>
+                    <li>Certificate generation upon course completion</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with MERN stack utilizing MongoDB for data storage, React for interactive UI, Node.js/Express for backend API, and AWS S3 for video content delivery.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Handling large video files and ensuring smooth streaming. Implemented AWS S3 for cloud storage and CDN integration for optimized video delivery worldwide.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
               data-filter-item
-              data-category="web applications">
-              <a href="https://pagefusion.adilc0070.site/">
+              data-category="web applications"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-12.webp"
+                  alt="PageFusion" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-12.webp"
-                    alt="pagefusion" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">PageFusion
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Application</p>
+                <h3 class="project-title">PageFusion</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://pagefusion.adilc0070.site/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/PageFusion_frontend">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="PageFusion"
+                    data-share-url="https://pagefusion.adilc0070.site/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Application
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>PageFusion</h3>
+                <p data-case-tech>MERN Stack, MongoDB, Express.js, React, Node.js, Redux</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>PageFusion is a modern blogging platform that combines social media features with traditional blogging. Users can create posts, follow other writers, and engage through comments and likes.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Rich text editor for blog post creation</li>
+                    <li>User profiles with follower system</li>
+                    <li>Real-time notifications and interactions</li>
+                    <li>Advanced search and filtering</li>
+                    <li>Category-based content organization</li>
+                    <li>Responsive design with dark mode</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with MERN stack using Redux for state management. Implements JWT authentication, real-time updates with Socket.IO, and optimized database queries for performance.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Managing real-time interactions at scale and implementing efficient content discovery. Developed caching strategies and optimized database indexing for better performance.</p>
+                </div>
+              </div>
             </li>
             <li class="project-item  active"
               data-filter-item
-              data-category="web applications">
-              <a href="https://rusticlens.adilc0070.site/">
+              data-category="web applications"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-13.webp"
+                  alt="Rusticlens" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-13.webp"
-                    alt="rusticlens" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Rusticlens
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Application</p>
+                <h3 class="project-title">Rusticlens</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://rusticlens.adilc0070.site/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/E-commers-website">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Rusticlens"
+                    data-share-url="https://rusticlens.adilc0070.site/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Application
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Rusticlens</h3>
+                <p data-case-tech>MERN Stack, MongoDB, Express.js, React, Node.js, Stripe</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>Rusticlens is a comprehensive e-commerce platform specialized in photography equipment. Features complete shopping functionality from product browsing to order fulfillment.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Advanced product catalog with filters</li>
+                    <li>Shopping cart and wishlist management</li>
+                    <li>Secure payment processing with Stripe</li>
+                    <li>Order tracking and history</li>
+                    <li>User reviews and ratings system</li>
+                    <li>Admin dashboard for inventory management</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with MERN stack integrating Stripe payment gateway. Features JWT authentication, RESTful API design, and responsive UI for seamless shopping experience.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Implementing secure payment processing and managing inventory in real-time. Integrated Stripe webhooks and implemented transaction logging for data consistency.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
               data-filter-item
-              data-category="web development">
-              <a href="https://netflix.adilc0070.site">
+              data-category="web development"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-11.webp"
+                  alt="Netflix TMDB" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-11.webp"
-                    alt="olx Clone" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Netflix TMDB API
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Development</p>
+                <h3 class="project-title">Netflix TMDB API</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://netflix.adilc0070.site">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/Netflix.app">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Netflix TMDB API"
+                    data-share-url="https://netflix.adilc0070.site">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Development
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Netflix TMDB API</h3>
+                <p data-case-tech>React, JavaScript, TMDB API, CSS3</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>A Netflix-inspired web application that uses The Movie Database (TMDB) API to display movies and TV shows with detailed information, trailers, and trending content.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Browse trending movies and TV shows</li>
+                    <li>Detailed movie information and trailers</li>
+                    <li>Category-based content organization</li>
+                    <li>Search functionality for movies and shows</li>
+                    <li>Responsive Netflix-inspired UI design</li>
+                    <li>Dynamic content loading with infinite scroll</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with React utilizing TMDB API for movie data. Implements advanced React hooks for state management and custom components for reusable UI elements.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Handling API rate limits and optimizing image loading for performance. Implemented efficient caching and lazy loading strategies for optimal user experience.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
               data-filter-item
-              data-category="web development">
-              <a href="https://olx.adilc0070.site/">
+              data-category="web development"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-14.webp"
+                  alt="OLX Clone" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-14.webp"
-                    alt="olx Clone" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">OLX Clone
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Development</p>
+                <h3 class="project-title">OLX Clone</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://olx.adilc0070.site/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/OLX_cloneReactJS">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="OLX Clone"
+                    data-share-url="https://olx.adilc0070.site/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web Development
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>OLX Clone</h3>
+                <p data-case-tech>React, Firebase, JavaScript, CSS3</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>A full-featured clone of OLX classified ads platform built with React and Firebase. Users can post ads, browse listings, and connect with sellers in real-time.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>User authentication with Firebase Auth</li>
+                    <li>Post and manage classified ads</li>
+                    <li>Real-time search and filtering</li>
+                    <li>Image upload with Firebase Storage</li>
+                    <li>User profiles and favorites</li>
+                    <li>Category-based product organization</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with React and Firebase ecosystem. Uses Firestore for data storage, Firebase Authentication for user management, and Firebase Storage for image handling.</p>
+
+                  <h4>Challenges & Solutions</h4>
+                  <p>Managing real-time data synchronization and implementing efficient search. Utilized Firebase queries and indexing for fast search results and real-time updates.</p>
+                </div>
+              </div>
             </li>
 
 
             <li class="project-item  active"
-              data-filter-item data-category="web design">
-              <a
-                href="https://adilc0070.github.io/bmw_CLONE/">
+              data-filter-item data-category="web design"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-3.webp"
+                  alt="BMW Clone" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-3.webp"
-                    alt="BMW_clone website" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">BMW_Clone</h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Design</p>
+                <h3 class="project-title">BMW Clone</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://adilc0070.github.io/bmw_CLONE/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/BMW_CLONE">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="BMW Clone"
+                    data-share-url="https://adilc0070.github.io/bmw_CLONE/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web design</p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>BMW Clone</h3>
+                <p data-case-tech>HTML5, CSS3, JavaScript, Responsive Design</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>A faithful recreation of BMW's official website demonstrating advanced front-end development skills, attention to detail, and modern web design implementation.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Pixel-perfect design replication</li>
+                    <li>Smooth CSS animations and transitions</li>
+                    <li>Fully responsive layout for all devices</li>
+                    <li>Interactive navigation and carousels</li>
+                    <li>Optimized images and performance</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with pure HTML, CSS, and JavaScript focusing on clean code and best practices. Implements CSS Grid and Flexbox for layouts with smooth animations.</p>
+
+                  <h4>Learning Outcomes</h4>
+                  <p>Enhanced skills in responsive design, CSS animations, and creating pixel-perfect layouts from existing designs. Improved understanding of modern web design patterns.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
-              data-filter-item data-category="web design">
-              <a
-                href="https://adilc0070.github.io/discord_CLONE/">
+              data-filter-item data-category="web design"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-5.webp"
+                  alt="Discord Clone" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-5.webp"
-                    alt="discord_CLONE" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Discord_CLONE
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Design</p>
+                <h3 class="project-title">Discord Clone</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://adilc0070.github.io/discord_CLONE/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/discord_CLONE">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Discord Clone"
+                    data-share-url="https://adilc0070.github.io/discord_CLONE/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web design</p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Discord Clone</h3>
+                <p data-case-tech>HTML5, CSS3, JavaScript, Responsive Design</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>A recreation of Discord's landing page focusing on modern UI/UX principles, smooth animations, and responsive design patterns used by leading tech companies.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Modern gradient backgrounds and effects</li>
+                    <li>Smooth scroll-triggered animations</li>
+                    <li>Responsive navigation with mobile menu</li>
+                    <li>Interactive hover effects and transitions</li>
+                    <li>Clean, readable typography</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Developed with HTML, CSS, and vanilla JavaScript. Utilized CSS custom properties for theme consistency and JavaScript for interactive elements.</p>
+
+                  <h4>Learning Outcomes</h4>
+                  <p>Mastered modern CSS techniques including gradients, transforms, and animations. Improved skills in creating engaging landing pages with strong visual hierarchy.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
-              data-filter-item data-category="web design">
-              <a href="https://adilc0070.site">
+              data-filter-item data-category="web design"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-6.webp"
+                  alt="Personal Portfolio" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-6.webp"
-                    alt="portfolio" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Personal
-                    Portfolio
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Design</p>
+                <h3 class="project-title">Personal Portfolio</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://adilc0070.site">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/personal_website">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Personal Portfolio"
+                    data-share-url="https://adilc0070.site">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web design</p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Personal Portfolio</h3>
+                <p data-case-tech>HTML5, CSS3, JavaScript, Responsive Design</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>A professionally designed personal portfolio website featuring a modern dark theme, smooth animations, and comprehensive sections showcasing skills, projects, and professional experience.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Clean, modern dark theme design</li>
+                    <li>Smooth page transitions and animations</li>
+                    <li>Project filtering and categorization</li>
+                    <li>Contact form with validation</li>
+                    <li>Fully responsive across all devices</li>
+                    <li>SEO optimized</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built with HTML, CSS, and JavaScript focusing on performance and user experience. Implements modern CSS techniques for layouts and smooth animations.</p>
+
+                  <h4>Design Philosophy</h4>
+                  <p>Focused on creating a professional yet approachable design that effectively communicates skills and experience while maintaining excellent usability and aesthetics.</p>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active"
               data-filter-item
-              data-category="web development">
-              <a
-                href="https://adilc0070.github.io/Netflix_Clone/">
+              data-category="web development"
+              data-project-item>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img
+                  src="./assets/images/compressed/project-7.webp"
+                  alt="Netflix Clone" loading="lazy">
+              </figure>
 
-                  <img
-                    src="./assets/images/compressed/project-7.webp"
-                    alt="summary" loading="lazy">
-                </figure>
-
-                <div class="project-content">
-                  <h3 class="project-title">Netflix_Clone
-                  </h3>
-                  <a class="project-code-link"
+              <div class="project-content">
+                <p class="project-category">Web Development</p>
+                <h3 class="project-title">Netflix Clone</h3>
+                
+                <div class="project-actions">
+                  <a class="project-btn project-demo-btn"
+                    target="_blank"
+                    href="https://adilc0070.github.io/Netflix_Clone/">
+                    <ion-icon name="open-outline"></ion-icon>
+                    
+                  </a>
+                  <a class="project-btn project-code-btn"
                     target="_blank"
                     href="https://github.com/adilc0070/Netflix_Clone">
-                    <ion-icon
-                      name="git-branch-outline"></ion-icon>
-                    Code
+                    <ion-icon name="logo-github"></ion-icon>
+                    
                   </a>
+                  <button class="project-btn project-share-btn" data-share-btn
+                    data-share-title="Netflix Clone"
+                    data-share-url="https://adilc0070.github.io/Netflix_Clone/">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </button>
+                  <button class="project-btn project-case-btn" data-case-study-btn>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span>Case Study</span>
+                  </button>
                 </div>
+              </div>
 
-                <p class="project-category">Web
-                  development
-                </p>
+              <div class="case-study-data" style="display: none;" data-case-study>
+                <h3 data-case-title>Netflix Clone</h3>
+                <p data-case-tech>HTML5, CSS3, JavaScript</p>
+                <div data-case-content>
+                  <h4>Project Overview</h4>
+                  <p>A static clone of Netflix's landing page created to practice fundamental web development skills including HTML structure, CSS styling, and basic JavaScript interactions.</p>
+                  
+                  <h4>Key Features</h4>
+                  <ul>
+                    <li>Accurate Netflix landing page recreation</li>
+                    <li>Responsive design for multiple screen sizes</li>
+                    <li>Interactive FAQ accordion section</li>
+                    <li>Email signup form with validation</li>
+                    <li>Smooth CSS transitions</li>
+                  </ul>
 
-              </a>
+                  <h4>Technical Implementation</h4>
+                  <p>Built using HTML, CSS, and vanilla JavaScript. Focuses on semantic HTML, modern CSS techniques, and basic DOM manipulation for interactive elements.</p>
+
+                  <h4>Learning Outcomes</h4>
+                  <p>Strengthened foundation in HTML/CSS/JavaScript, responsive design principles, and creating pixel-perfect layouts from designs. Enhanced understanding of form validation.</p>
+                </div>
+              </div>
             </li>
 
           </ul>
 
         </section>
+
+        <!-- Case Study Modal -->
+        <div class="case-study-modal-container" data-case-study-modal-container>
+
+          <div class="overlay" data-case-study-overlay></div>
+
+          <section class="case-study-modal">
+
+            <button class="modal-close-btn" data-case-study-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="case-study-modal-content">
+              
+              <div class="modal-header">
+                <h3 class="modal-title" data-modal-case-title>Project Title</h3>
+                <p class="modal-tech-stack" data-modal-case-tech>Technologies Used</p>
+              </div>
+
+              <div class="modal-body" data-modal-case-content>
+                <p>Project details will appear here...</p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
 
       </article>
 

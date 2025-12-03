@@ -1,0 +1,271 @@
+<!-- 
+  PROJECT TEMPLATE WITH ALL IMPROVEMENTS
+  Copy this template for each new project
+  
+  Replace the following placeholders:
+  - [PROJECT-NAME] - e.g., "Flux Currency"
+  - [CATEGORY] - e.g., "web development", "web applications", etc.
+  - [GITHUB-REPO] - e.g., "username/repository"
+  - [IMAGE-PATH] - e.g., "./assets/images/compressed/project-1.webp"
+  - [DEMO-URL] - e.g., "https://project.vercel.app"
+  - [GITHUB-URL] - e.g., "https://github.com/username/repo"
+  - [TECH-STACK] - e.g., "React, Node.js, MongoDB"
+  - [YEAR] - e.g., "2024"
+  - [VIEW-COUNT] - e.g., "1.2k" (optional, will auto-generate)
+  - [DESCRIPTION] - Short project description
+  - [TESTIMONIAL-TEXT] - Client quote
+  - [TESTIMONIAL-AUTHOR] - Client name
+  - [APP-CATEGORY] - Schema.org category (e.g., "FinanceApplication", "BusinessApplication")
+-->
+
+<li class="project-item active"
+    data-filter-item
+    data-category="[CATEGORY]"
+    data-project-item
+    data-github-repo="[GITHUB-REPO]">
+
+  <!-- Skeleton Loader -->
+  <div class="skeleton-loader" data-skeleton>
+    <div class="skeleton-img"></div>
+    <div class="skeleton-content">
+      <div class="skeleton-category"></div>
+      <div class="skeleton-title"></div>
+      <div class="skeleton-stats"></div>
+      <div class="skeleton-tags"></div>
+      <div class="skeleton-actions"></div>
+    </div>
+  </div>
+
+  <!-- Project Image with Lazy Loading -->
+  <figure class="project-img">
+    <div class="project-item-icon-box">
+      <ion-icon name="eye-outline"></ion-icon>
+    </div>
+    <img
+      data-src="[IMAGE-PATH]"
+      alt="[PROJECT-NAME]"
+      class="lazy-load"
+      loading="lazy">
+  </figure>
+
+  <!-- Project Content -->
+  <div class="project-content">
+    <!-- Category Badge -->
+    <p class="project-category">[CATEGORY-DISPLAY-NAME]</p>
+    
+    <!-- Project Title -->
+    <h3 class="project-title">[PROJECT-NAME]</h3>
+    
+    <!-- Project Statistics -->
+    <div class="project-stats">
+      <!-- GitHub Stars (Auto-fetched) -->
+      <div class="stat-item" data-github-stars>
+        <ion-icon name="star-outline"></ion-icon>
+        <span class="stat-value">--</span>
+      </div>
+      
+      <!-- GitHub Forks (Auto-fetched) -->
+      <div class="stat-item" data-github-forks>
+        <ion-icon name="git-network-outline"></ion-icon>
+        <span class="stat-value">--</span>
+      </div>
+      
+      <!-- View Count (Auto-generated) -->
+      <div class="stat-item">
+        <ion-icon name="eye-outline"></ion-icon>
+        <span class="stat-value" data-view-count>[VIEW-COUNT]</span>
+      </div>
+      
+      <!-- Year -->
+      <div class="stat-item">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span class="stat-value">[YEAR]</span>
+      </div>
+    </div>
+
+    <!-- Technology Stack Tags -->
+    <div class="tech-tags">
+      <!-- Add as many tags as needed -->
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">Node.js</span>
+      <span class="tech-tag">MongoDB</span>
+      <span class="tech-tag">Express</span>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="project-actions">
+      <!-- Live Demo Button -->
+      <a class="project-btn project-demo-btn"
+         target="_blank"
+         href="[DEMO-URL]"
+         rel="noopener noreferrer">
+        <ion-icon name="open-outline"></ion-icon>
+        <span>Live Demo</span>
+      </a>
+      
+      <!-- Source Code Button -->
+      <a class="project-btn project-code-btn"
+         target="_blank"
+         href="[GITHUB-URL]"
+         rel="noopener noreferrer">
+        <ion-icon name="logo-github"></ion-icon>
+        <span>Source Code</span>
+      </a>
+      
+      <!-- Case Study Button -->
+      <button class="project-btn project-case-btn" data-case-study-btn>
+        <ion-icon name="document-text-outline"></ion-icon>
+        <span>Case Study</span>
+      </button>
+      
+      <!-- Share Button -->
+      <button class="project-btn project-share-btn" 
+              data-share-btn
+              data-share-title="[PROJECT-NAME]"
+              data-share-url="[DEMO-URL]">
+        <ion-icon name="share-social-outline"></ion-icon>
+        <span>Share</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Hidden Case Study Data -->
+  <div class="case-study-data" style="display: none;" data-case-study>
+    <h3 data-case-title>[PROJECT-NAME]</h3>
+    <p data-case-tech>[TECH-STACK]</p>
+    <div data-case-content>
+      
+      <!-- Project Overview -->
+      <h4>Project Overview</h4>
+      <p>
+        [Detailed description of the project, its purpose, and main objectives]
+      </p>
+      
+      <!-- PROJECT MEDIA GALLERY (Images & Videos) -->
+      <div class="case-study-media">
+        <h4>Project Media</h4>
+        <div class="media-grid">
+          
+          <!-- Full-width Demo Video (Optional) -->
+          <div class="media-item full-width" data-media-type="video">
+            <video controls poster="[PATH-TO-POSTER]" preload="metadata">
+              <source src="[PATH-TO-VIDEO]" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="media-caption">[Video Caption - e.g., "Full Demo Walkthrough (2:30)"]</p>
+          </div>
+          
+          <!-- Screenshot 1 -->
+          <div class="media-item" data-media-type="image">
+            <img src="[PATH-TO-IMAGE-1]" alt="[Alt Description]" loading="lazy">
+            <p class="media-caption">[Image Caption - e.g., "Dashboard Interface"]</p>
+          </div>
+          
+          <!-- Screenshot 2 -->
+          <div class="media-item" data-media-type="image">
+            <img src="[PATH-TO-IMAGE-2]" alt="[Alt Description]" loading="lazy">
+            <p class="media-caption">[Image Caption - e.g., "Mobile View"]</p>
+          </div>
+          
+          <!-- Screenshot 3 -->
+          <div class="media-item" data-media-type="image">
+            <img src="[PATH-TO-IMAGE-3]" alt="[Alt Description]" loading="lazy">
+            <p class="media-caption">[Image Caption - e.g., "Features Overview"]</p>
+          </div>
+          
+          <!-- Add more media items as needed (4-8 recommended) -->
+          
+        </div>
+      </div>
+      
+      <!-- Key Features -->
+      <h4>Key Features</h4>
+      <ul>
+        <li>[Feature 1]</li>
+        <li>[Feature 2]</li>
+        <li>[Feature 3]</li>
+        <li>[Feature 4]</li>
+        <li>[Feature 5]</li>
+      </ul>
+
+      <!-- Technical Implementation -->
+      <h4>Technical Implementation</h4>
+      <p>
+        [Describe the technical approach, architecture, and key technologies used]
+      </p>
+
+      <!-- Challenges & Solutions -->
+      <h4>Challenges & Solutions</h4>
+      <p>
+        [Describe challenges faced and how they were solved]
+      </p>
+
+      <!-- Client Testimonial (Optional but Recommended) -->
+      <h4>Client Testimonial</h4>
+      <div class="case-study-testimonial">
+        <p class="testimonial-text">
+          "[TESTIMONIAL-TEXT]"
+        </p>
+        <p class="testimonial-author">- [TESTIMONIAL-AUTHOR]</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "[PROJECT-NAME]",
+    "description": "[DESCRIPTION]",
+    "applicationCategory": "[APP-CATEGORY]",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Adil C",
+      "url": "https://adilc0070.site"
+    },
+    "datePublished": "[YEAR]",
+    "url": "[DEMO-URL]",
+    "screenshot": "[IMAGE-PATH]",
+    "softwareVersion": "1.0",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "45"
+    }
+  }
+  </script>
+</li>
+
+<!-- 
+  SCHEMA.ORG APPLICATION CATEGORIES:
+  
+  Common Categories:
+  - BusinessApplication
+  - FinanceApplication
+  - EntertainmentApplication
+  - EducationApplication
+  - LifestyleApplication
+  - MultimediaApplication
+  - DesignApplication
+  - DeveloperApplication
+  - CommunicationApplication
+  - GameApplication
+  - HealthApplication
+  - MobileApplication
+  - NavigationApplication
+  - SecurityApplication
+  - SportsApplication
+  - TravelApplication
+  - UtilitiesApplication
+  - WebApplication
+  
+  Choose the most appropriate category for SEO
+-->
